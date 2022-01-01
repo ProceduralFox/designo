@@ -1,0 +1,351 @@
+@import "./variables.scss";
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    background: $peach;
+    color: $white;
+
+    text-align: center;
+
+    >div{
+        margin-left: 9.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        >p{
+            width: 45.8rem;
+            margin: 0;
+            margin-top: 3.2rem;
+        }
+
+        >h2{
+            text-align: left;
+            margin: 0;
+        }
+    }
+}
+
+
+.mid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    margin-top: 16rem;
+    margin-bottom: 16rem;
+
+    background: hsla(14, 76%, 97%, 1);
+    color: $black;
+
+    text-align: center;
+
+    >div{
+        width: 44.5rem;
+        margin-right: 9.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        >p{
+            margin: 0;
+            margin-top: 3.2rem;
+        }
+
+        >h2{
+            text-align: left;
+            margin: 0;
+            color: $peach;
+        }
+    }
+}
+
+
+.locations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    margin-top: 16rem;
+
+    background: hsla(14, 76%, 97%, 1);
+    color: $black;
+
+    text-align: center;
+
+    >div{
+        width: 44.5rem;
+        margin-left: 9.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        >p{
+            margin: 0;
+            margin-top: 3.2rem;
+        }
+
+        >h2{
+            text-align: left;
+            margin: 0;
+            color: $peach;
+        }
+    }
+}
+
+
+
+
+@media only screen and (max-width: 1112px) {
+    .locations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        height: 123rem;
+    
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .top{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        overflow: hidden;
+        height: 63.2rem;
+        border-radius: 2.5rem;
+        
+
+        >img{
+            width: 90vw;
+            // position: absolute;
+            // top: 0;
+        }
+
+        >div {
+            margin:auto;
+
+            >h2{
+                text-align: center;
+                margin: auto;
+            }
+
+            >p{
+                text-align: left;
+            }
+        }
+    }
+
+    .mid{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        overflow: hidden;
+        height: 63.2rem;
+        border-radius: 2.5rem;
+        
+
+        >img{
+            width: 90vw;
+            // position: absolute;
+            // top: 0;
+        }
+
+        >div {
+            margin:auto;
+
+            >h2{
+                text-align: center;
+                margin: auto;
+            }
+
+            >p{
+                text-align: left;
+            }
+        }
+    }
+
+    .bottom{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        overflow: hidden;
+        height: 63.2rem;
+        border-radius: 2.5rem;
+        
+
+        >img{
+            width: 90vw;
+            // position: absolute;
+            // top: 0;
+        }
+
+        >div {
+            margin:auto;
+
+            >h2{
+                text-align: center;
+                margin: auto;
+            }
+
+            >p{
+                text-align: left;
+            }
+        }
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .top{
+        height: 63.2rem;
+        width: 100vw;
+        border-radius: 0;
+        justify-self: flex-start;
+        
+        justify-content: flex-start;
+        margin-top: 5rem;
+        
+        >img{
+            width: 100vw;
+        }
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            >p{
+                font-size: 4vw;
+                width: 90vw;
+                margin: 0;
+            }
+
+            >h2{
+                width: 90vw;
+                font-size: 8vw;
+                margin: auto;
+            }
+        }
+    }
+
+    .mid{
+        height: 86.5rem;
+        width: 100vw;
+        border-radius: 2.5rem;
+        border-radius: 0;
+
+        justify-self: flex-start;
+                
+        justify-content: flex-start;
+        margin-top: 5rem;
+        >img{
+            width: 100vw;
+        }
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            >p{
+                font-size: 4vw;
+                width: 90vw;
+                margin: 0;
+            }
+
+            >h2{
+                width: 90vw;
+                font-size: 8vw;
+                margin: auto;
+            }
+        }
+    }
+
+
+    .bottom{
+        height: 86.5rem;
+        width: 100vw;
+        border-radius: 2.5rem;
+        border-radius: 0;
+
+        justify-self: flex-start;
+                
+        justify-content: flex-start;
+
+        >img{
+            width: 100vw;
+        }
+
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100vw;
+            margin-top: 5rem;
+            >p{
+                font-size: 4vw;
+                width: 90vw;
+                margin: 0;
+            }
+
+            >h2{
+                width: 90vw;
+                font-size: 8vw;
+                margin: auto;
+            }
+        }
+    }
+}
