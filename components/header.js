@@ -35,9 +35,9 @@ const Header = () => {
                 selection ?
                 <div className="conditional_links">
                     <ul>
-                        <li><Link href="/"><a className="link_header" >Our Company</a></Link></li>
-                        <li><Link href="/"><a className="link_header" >Locations</a></Link></li>
-                        <li><Link href="/"><a className="link_header" >Contact</a></Link></li>
+                        <li><Link href="/about"><a className="link_header" >Our Company</a></Link></li>
+                        <li><Link href="/locations"><a className="link_header" >Locations</a></Link></li>
+                        <li><Link href="/contact"><a className="link_header" >Contact</a></Link></li>
                     </ul>
                 </div>
                 :
@@ -51,9 +51,9 @@ const Header = () => {
                 :
                 <div>
                     <ul>
-                        <li><Link href="/"><a className="link_header" >Our Company</a></Link></li>
-                        <li><Link href="/"><a className="link_header" >Locations</a></Link></li>
-                        <li><Link href="/"><a className="link_header" >Contact</a></Link></li>
+                        <li><Link href="/about"><a className="link_header" >Our Company</a></Link></li>
+                        <li><Link href="/locations"><a className="link_header" >Locations</a></Link></li>
+                        <li><Link href="/contact"><a className="link_header" >Contact</a></Link></li>
                     </ul>
                 </div>
                 }

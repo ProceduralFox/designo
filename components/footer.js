@@ -10,7 +10,7 @@ const Footer = () => {
     <footer>
         <div className={!isContact ? styles.conditional : styles.none} onClick={()=>console.log(router.pathname)}>
             <div className="">
-                <h3>Let's talk about your project</h3>
+                <h3>Let&apos;s talk about your project</h3>
                 <p>Ready to take it to the next Level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
 
@@ -23,9 +23,9 @@ const Footer = () => {
                     <img src="./FooterLogoD.svg" alt="" onClick={(e)=>{e.preventDefault(); router.push("/")}}  />
                     <div>
                         <ul>
-                            <li><Link href="/"><a className="link_footer" >Our Company</a></Link></li>
-                            <li><Link href="/"><a className="link_footer" >Locations</a></Link></li>
-                            <li><Link href="/"><a className="link_footer" >Contact</a></Link></li>
+                            <li><Link href="/about"><a className="link_footer" >Our Company</a></Link></li>
+                            <li><Link href="/locations"><a className="link_footer" >Locations</a></Link></li>
+                            <li><Link href="/contact"><a className="link_footer" >Contact</a></Link></li>
                         </ul>
                     </div>
                 </div>

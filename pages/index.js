@@ -46,7 +46,7 @@ export default function Home() {
             <div className="graph_horizontal">
               <div className="link_container">
                 <h2>GRAPHIC DESIGN</h2>
-                <Link href="/graphics" ><a className="link">View Projects</a></Link>
+                <Link href="/graphic" ><a className="link">View Projects</a></Link>
               </div>
             </div>
           </div>
