@@ -1,11 +1,15 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../styles/footer.module.scss'
+import styles from '../styles/footer.module.scss';
 
+import logo from '../public/FooterLogoD.svg';
+import socials from '../public/SOCIALSGROUP.svg'
 
 const Footer = () => {
     const router = useRouter()
     const isContact = router.pathname === "/contact"
+
     return ( 
     <footer>
         <div className={!isContact ? styles.conditional : styles.none} onClick={()=>console.log(router.pathname)}>
@@ -20,7 +24,7 @@ const Footer = () => {
         <div className={styles.visible_background}>
             <section>
                 <div className={styles.top}>
-                    <img src="./FooterLogoD.svg" alt="" onClick={(e)=>{e.preventDefault(); router.push("/")}}  />
+                    <Image src={logo} onClick={(e)=>{e.preventDefault(); window.scrollTo(0, 0); console.log("click")}}></Image>
                     <div>
                         <ul>
                             <li><Link href="/about"><a className="link_footer" >Our Company</a></Link></li>
@@ -40,7 +44,7 @@ const Footer = () => {
                         <p>P : +1 253-863-8967</p>
                         <p>M : contact@designo.co</p>
                     </div>
-                    <img src="./SOCIALSGROUP.svg" alt="" />
+                    <Image src={socials}></Image>
                     <div className=""></div>
                 </div>
             </section>

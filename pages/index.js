@@ -1,16 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
-import { useEffect } from 'react'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
+import styles from '../styles/Home.module.scss';
 
+
+import phone from '../public/HomePhone.png';
+import passionate from '../public/FigurePassionate.svg';
+import resourceful from '../public/FigureResourceful.svg';
+import friendly from '../public/FigureFriendly.svg';
 
 export default function Home() {
-
-  useEffect(()=>{
-    console.log(window.innerWidth)
-  }, [])
-
 
   return (
     <div>
@@ -26,7 +26,9 @@ export default function Home() {
             <p>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
             <button className="btn_light">Learn More</button>
           </div>
-          <img className={styles.image} src="./HomePhone.svg" alt="" />
+          <div className={styles.image}>
+            <Image src={phone} ></Image>
+          </div>
         </section>
 
         <section className={styles.mid}>
@@ -55,21 +57,21 @@ export default function Home() {
 
         <section className={styles.bottom}>
           <div className="">
-            <img src="./FigurePassionate.svg" alt="" />
+            <Image src={passionate} ></Image>
             <div className="">
               <h3>Passionate</h3>
               <p>Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge art, design, and technology into exciting new solutions.</p>
             </div>
           </div>
           <div className="">
-            <img src="./FigureResourceful.svg" alt="" />
+            <Image src={resourceful} ></Image>
             <div className="">
               <h3>Resourceful</h3>
               <p>Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
             </div>
           </div>
           <div className="">
-            <img src="./FigureFriendly.svg" alt="" />
+          <Image src={friendly} ></Image>
             <div className="">
               <h3>Friendly</h3>
               <p> We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we strive to give them the best experience a company can provide.</p>
@@ -82,3 +84,5 @@ export default function Home() {
     </div>
   )
 }
+
+

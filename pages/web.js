@@ -1,7 +1,15 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/WebDesign.module.scss'
 
+
+import express from '../public/WebDesignGrid/Express-Desktop.jpg';
+import transfer from '../public/WebDesignGrid/Transfer-Desktop.jpg';
+import photon from '../public/WebDesignGrid/Photon-Desktop.jpg';
+import builder from '../public/WebDesignGrid/Builder-Desktop.jpg';
+import blogr from '../public/WebDesignGrid/BLOGR-Desktop.jpg';
+import camp from '../public/WebDesignGrid/Camp-Desktop.jpg';
 
 const WebDesign = () => {
     return ( 
@@ -20,42 +28,42 @@ const WebDesign = () => {
                 <section className={styles.mid}>
                     <div className="content_grid">
                         <div>
-                            <img src="./WebDesignGrid/Express-Desktop.svg" alt="" />
+                            <Image src={express}></Image>
                             <div>
                                 <h3>Express</h3>
                                 <p>A multi-carrier shipping website for ecommerce businesses</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./WebDesignGrid/Transfer-Desktop.svg" alt="" />
+                            <Image src={transfer}></Image>
                             <div>
                                 <h3>Transfer</h3>
                                 <p>Site for low-cost money transfers and sending money within seconds</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./WebDesignGrid/Photon-Desktop.svg" alt="" />
+                            <Image src={photon} width={350} height={320}></Image>
                             <div>
                                 <h3>Photon</h3>
                                 <p>A state-of-the-art music player with high-resolution audio and DSP effects</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./WebDesignGrid/Builder-Desktop.svg" alt="" />
+                            <Image src={builder} layout="fixed"></Image>
                             <div>
                                 <h3>Builder</h3>
                                 <p>Connects users with local contracotrs based on their location</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./WebDesignGrid/BLOGR-Desktop.svg" alt="" />
+                            <Image src={blogr} width={350} height={320} layout="intrinsic"></Image>
                             <div>
                                 <h3>Blogr</h3>
                                 <p>Blogr is a platform for creating an online blog or publication</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./WebDesignGrid/Camp-Desktop.svg" alt="" />
+                            <Image src={camp}></Image>
                             <div>
                                 <h3>Camp</h3>
                                 <p>Get expert training in coding, data, design and digital marketing</p>

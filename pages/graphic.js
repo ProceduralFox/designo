@@ -1,6 +1,10 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
+import change from '../public/GraphicDesignGrid/Change-D.jpg';
+import boxed from '../public/GraphicDesignGrid/Boxed-D.jpg';
+import science from '../public/GraphicDesignGrid/Science-D.jpg';
 
 const GraphicDesign = () => {
     return ( 
@@ -19,21 +23,21 @@ const GraphicDesign = () => {
                 <section>
                     <div className="content_grid">
                         <div>
-                            <img src="./GraphicDesignGrid/Change-D.svg" alt="" />
+                            <Image src={change}></Image>
                             <div>
                                 <h3>Tim Brown</h3>
                                 <p>A book cover designed for Tim Brown’s new release, ‘Change’</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./GraphicDesignGrid/Boxed-D.svg" alt="" />
+                            <Image src={boxed}></Image>
                             <div>
                                 <h3>Boxed Water</h3>
                                 <p>A simple packaging concept made for Boxed Water</p>
                             </div>
                         </div>
                         <div>
-                            <img src="./GraphicDesignGrid/Science-D.svg" alt="" />
+                            <Image src={science}></Image>
                             <div>
                                 <h3>Science!</h3>
                                 <p>A poster made in collaboration with the Federal Art Project</p>

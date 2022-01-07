@@ -1,8 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-
+import logo from '../public/HeaderLogoD.svg';
 
 const Header = () => {
     const router = useRouter()
@@ -41,7 +42,7 @@ const Header = () => {
                     </ul>
                 </div>
                 :
-                <img src="./HeaderLogoD.svg" alt="" onClick={(e)=>{e.preventDefault(); router.push("/")}}  />
+                <Image src={logo} onClick={(e)=>{e.preventDefault(); router.push("/")}}></Image>
                 }
                 {
                 screenW < 600 ?
