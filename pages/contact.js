@@ -1,9 +1,13 @@
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from '../styles/Contact.module.scss'
 
 const Contact = () => {
     return ( 
     <>
+        <Head>
+            <title>Designo</title>
+        </Head>
         <main className="container">
             <section>
                 <div className={styles.top}>

@@ -14,7 +14,9 @@ import camp from '../public/WebDesignGrid/Camp-Desktop.jpg';
 const WebDesign = () => {
     return ( 
         <>
-            <Head></Head>
+            <Head>
+                <title>Designo</title>
+            </Head>
             <main className={styles.container}>
                 <section>
                     <div className="banner">

@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import styles from '../styles/locations.module.scss'
 
@@ -30,6 +31,9 @@ function Locations() {
   )
   return (
   <>
+  <Head>
+    <title>Designo</title>
+  </Head>
   <main className={`container ${styles.util}`}>
       <section className={styles.section}>
         <div className={styles.side}>

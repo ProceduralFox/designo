@@ -9,7 +9,9 @@ import science from '../public/GraphicDesignGrid/Science-D.jpg';
 const GraphicDesign = () => {
     return ( 
     <>
-            <Head></Head>
+            <Head>
+                <title>Designo</title>
+            </Head>
             <main className="container">
                 <section>
                     <div className="banner">

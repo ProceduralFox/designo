@@ -13,7 +13,9 @@ import loopstudios from '../public/AppDesignGrid/Loopstudios-D.jpg';
 const Apps = () => {
     return ( 
     <>
-            <Head></Head>
+            <Head>
+                <title>Designo</title>
+            </Head>
             <main className="container">
                 <section>
                     <div className="banner">
